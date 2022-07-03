@@ -1,1 +1,14 @@
-h1 {color:#4E7E6D;}
+body {background-color: #f3f7f4;}
+
+h1 {color: #4e7e6d}
+h1 {color: #4e7e6d;}
+h3 {color: #76867f;}
+p {font-family: Georgia, 'Times New Roman', Times, serif; 
+font-size: 14pt;
+margin: 10px;
+padding-left: 10px;
+width: 1000px;
+
+}
+h3+p::first-letter {font-size: 150%;
+color: #233B3D;}
