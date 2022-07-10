@@ -1,0 +1,86 @@
+  /* Main Nav Style is coded below */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #233B3D;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: #e4e7e5;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    background-color: #3d233b;
+  }
+  /* drop down nav styled below (I hope) */
+
+  nav ul ul{
+      position: absolute;
+      top: 50px;
+      display: none;
+      color:#e4e7e5;
+      text-align: center;
+      padding: 14px 16px;
+
+  }
+  nav ul li:hover > ul{
+    display: block;
+
+  }
+  ul li:hover {
+      background-color:#3d233b;
+  }
+  nav ul ul li{
+    width: 100px;
+    float: none;
+    display: list-item;
+    position: relative;
+    padding: 14px 16px;
+
+  }
+  #menu-icon {
+    background: url(https://www.google.com/search?q=hamburger+icon&tbm=isch&chips=q:hamburger+icon,g_1:menu:zh488Wp1qsk%3D&rlz=1C5CHFA_enUS960US960&hl=en&sa=X&ved=2ahUKEwjEoOK24-74AhVQBc0KHStCAjcQ4lYoAnoECAEQIQ&biw=1136&bih=561&safe=active&ssui=on#imgrc=KgWqknkTenGC9M)
+    display: hidden;
+    width: 32px;
+    height: 32px; 
+  }
+@media only screen and (max-width: 640px) {
+  header {
+    position: absolute;
+  }
+  #menu-icon {
+    display: inline-block;
+  }
+  nav ul, nav:active ul {
+    display: none;
+    position: absolute;
+    padding: 20px;
+    background: #233B3D;
+    right: 10px;
+    top: 65px;
+    width: 35%;
+  }
+  nav:hover ul {
+    display: block;
+
+  }
+  nav li {
+    text-align: center;
+    width: 100%;
+    padding: 15px 0;
+    margin: 0;
+
+
+  }
+}
