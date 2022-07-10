@@ -49,3 +49,39 @@ ul {
     padding: 14px 16px;
 
   }
+  
+  body {
+    padding: 0px;
+    margin: 0px;
+    font-size: 20px;
+    min-height: 100vh;
+  }
+  
+  #hamburger-menu {
+      width: 50px;
+      height: 50px;
+      display: block;
+      border: none;
+      padding: 0px;
+      margin: 20px;
+      background: linear-gradient(
+        to bottom, 
+        #233B3D, #233B3D 20%, 
+        white 20%, white 40%, 
+        #233B3D 40%, #233B3D 60%, 
+        white 60%, white 80%, 
+        #233B3D 80%, #233B3D 100%
+      );
+  }
+  
+  #hamburger-menu #sidebar-menu {
+      visibilty: hidden;
+      position: fixed;
+      top: 0;
+      left: -250px;
+      width: 200px;
+      height: 100%;
+      background-color: #233B3D;
+      padding: 0px 10px;
+      box-sizing: border-box;
+  }
