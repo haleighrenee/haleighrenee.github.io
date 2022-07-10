@@ -49,38 +49,3 @@ ul {
     padding: 14px 16px;
 
   }
-  #menu-icon {
-    background: url(#icon.jpg)
-    display: hidden;
-    width: 32px;
-    height: 32px; 
-  }
-@media only screen and (max-width: 640px) {
-  header {
-    position: absolute;
-  }
-  #menu-icon {
-    display: inline-block;
-  }
-  nav ul, nav:active ul {
-    display: none;
-    position: absolute;
-    padding: 20px;
-    background: #233B3D;
-    right: 10px;
-    top: 65px;
-    width: 35%;
-  }
-  nav:hover ul {
-    display: block;
-
-  }
-  nav li {
-    text-align: center;
-    width: 100%;
-    padding: 15px 0;
-    margin: 0;
-
-
-  }
-}
