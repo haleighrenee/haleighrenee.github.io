@@ -2,13 +2,13 @@ body {background-color: #f3f7f4;}
 
 h1 {color: #4e7e6d}
 h1 {color: #4e7e6d;}
+h2 {color: #76867f;}
 h3 {color: #76867f;}
 p {font-family: Georgia, 'Times New Roman', Times, serif; 
-font-size: 14pt;
+font-size: 12pt;
 margin: 10px;
 padding-left: 10px;
 width: 1000px;
-
 }
 h3+p::first-letter {font-size: 150%;
 color: #233B3D;}
@@ -19,6 +19,7 @@ main {
     grid-template-rows: 60px 3fr 2fr 2fr 60px;
     grid-gap: 10px;
     height: 900px;
+
 }
 
 body {
@@ -104,4 +105,11 @@ body {
   .sidebar2 {
     background-color: #f3f7f4;
     color: #233B3D;
+  }
+  @media (min-width: 600px ) { 
+    p{ 
+      font-size: 1.5rem;
+      line-height: 1.5;
+    }
+
   }
