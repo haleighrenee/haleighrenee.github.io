@@ -1,28 +1,35 @@
 <!DOCTYPE html>
-<html lang="en-US">
-<head>   
-     <!-- 
-    *************************************************
-    Title: About Me Page
-    Use: To show users who I am and give them a bit of info about me
-    Author: Haleigh Thompson
-    School/Term: Mizzou, Summer 2022
-    Developed: June 15, 2022
-    Tested: June 15, 2022; 
--->
-               <meta charset="utf-8">
-               <meta name="viewport" content="width=device-width, initial-scale=1">
-               <title>About Me</title>
-               <link rel="stylesheet" href="style.css">
-               <link rel="stylesheet" href="nav.css">
-</head>
-<body>
 
-    <nav id ="nav_menu">
+<!--
+    ***************************************************
+    This is the UPDATED code for my about page with fixed navigation & hamburger menu.
+    ***************************************************
+    Still need to adjust: image can't get it centered :|
+ -->
+ 
+<html lang="en-US">
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+
+    <title>About Me</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+
+  </head>
+
+  <body>
+    <!-- (A) MENU WRAPPER -->
+    <nav id="hamnav">
+      <!-- (B) THE HAMBURGER -->
+      <label for="hamburger">&#9776;</label>
+      <input type="checkbox" id="hamburger"/>
+
+      <!-- (C) MENU ITEMS -->
+      <div class="dropdown" id="hamitems">
         <ul>
             <li> <a href="index.html"> Home </a></li>
             <li> <a href="about.html"> About </a> </li>
-            <li> <a href="project.html">Projects</a>
+            <li> <a href="#projects.html">Projects</a>
             <ul>
                 <li>Link 1 </li>
                 <li>Link 2 </li>
@@ -32,41 +39,40 @@
             <li> <a href="#contact.html"> Contact </a></li>
     
         </ul>
-        </nav>
-       <!-- This might be how to label my sections, trying it out for now
-    -->
-<div class="wrapper">
-  <div class="box header"> <h1>Haleigh Thompson</h1> </div>
-  <div class="box sidebar"> I might not put anything here. </div>
-  <div class="box sidebar2">Just leaving this as a placeholder for right now.</div>
-  <div class="box content"><h3><strong>About Me</strong></h3> 
-    <div style="text-align: center;"> </div> <img width="300" src="headshot.jpg" alt="Headshot of Haleigh Thompson">
+    </div>
+    </nav>
+    <div class="wrapper">
+        <div class="box header">  <h1><strong>About Me:</strong></h1> </div>
+        <div class="box sidebar"> I might not put anything here. </div>
+        <div class="box sidebar2">Just leaving this as a placeholder for right now.</div>
+        <div class="box content"><h2>Haleigh Thompson - Educator & Student </h2> 
+         <div style="text-align: center;"> </div> <img width="300" src="headshot.jpg" alt="Headshot of Haleigh Thompson">
 
-<blockquote><em>"With freedom, books, flowers, and the moon, who could not be happy?" - Oscar Wilde</em></blockquote>
+            <blockquote><em>"With freedom, books, flowers, and the moon, who could not be happy?" - Oscar Wilde</em></blockquote>
+            
+            
+                 <p>  Hello, I am Haleigh! I was born and raised in the <strong>Kansas City, Missouri</strong> area 
+                and currently reside in Lee’s Summit–just outside the metro. I have experience teaching all 
+                levels of high school English. This is my 6th year as an educator. When I am not spending my 
+                time grading, planning, or hanging out in my classroom, I’m likely with my husband and dogs.<br> 
+                I married my husband, Kyle, in 2016. We have two dogs, Albus and Dobby, and they occupy most of 
+                our free time. Our favorite pastime is walking them around the neighborhood. We enjoy anything 
+                involving science-fiction or superheroes. If we aren’t doing anything already mentioned, then we’re
+                likely out for a run or enjoying dinner on a local patio.</p> 
+                <p>Outside of all the excitement of teaching and being a dog mom, 
+                I am also a <em>student.</em> I earned my Bachelor of Arts in English from Avila University
+                in Kansas City. After getting my first two years of teaching under my belt, 
+                I decided to return to the classroom. I earned my Master of Arts in English from Emporia State 
+                University in 2020 (right as the pandemic hit). Finally, because I learned to <em>love</em> 
+                virtual teaching, I enrolled in my current program at the University of Missouri. 
+                I am working toward an Education Specialist in Information Science and Learning Technologies 
+                with an emphasis in Online Education. I will graduate in December 2022.
+                </p>
+                <br /> Space for Video Resume & Clickable Picture for CV 
+                <p><a href="ThompsonCV.pdf"> Curriculum Vitae </a></p></div>      
+    </div> 
 
+      <div class="box footer"> <footer>Haleigh Thompson &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; hrmg24@umsystem.edu &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;© 2022</footer></div>
 
-     <p>  Hello, I am Haleigh! I was born and raised in the <strong>Kansas City, Missouri</strong> area 
-    and currently reside in Lee’s Summit–just outside the metro. I have experience teaching all 
-    levels of high school English. This is my 6th year as an educator. When I am not spending my 
-    time grading, planning, or hanging out in my classroom, I’m likely with my husband and dogs.<br> 
-    I married my husband, Kyle, in 2016. We have two dogs, Albus and Dobby, and they occupy most of 
-    our free time. Our favorite pastime is walking them around the neighborhood. We enjoy anything 
-    involving science-fiction or superheroes. If we aren’t doing anything already mentioned, then we’re
-    likely out for a run or enjoying dinner on a local patio.</p> 
-    <p>Outside of all the excitement of teaching and being a dog mom, 
-    I am also a <em>student.</em> I earned my Bachelor of Arts in English from Avila University
-    in Kansas City. After getting my first two years of teaching under my belt, 
-    I decided to return to the classroom. I earned my Master of Arts in English from Emporia State 
-    University in 2020 (right as the pandemic hit). Finally, because I learned to <em>love</em> 
-    virtual teaching, I enrolled in my current program at the University of Missouri. 
-    I am working toward an Education Specialist in Information Science and Learning Technologies 
-    with an emphasis in Online Education. I will graduate in December 2022.
-    </p>
-    <br /> Space for Video Resume & Clickable Picture for CV 
-    <p><a href="ThompsonCV.pdf"> Curriculum Vitae </a></p></div>
-  <div class="box footer"> <footer>Haleigh Thompson &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; hrmg24@umsystem.edu &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;© 2022</footer></div>
-</div>
-   
-
-</body>
+  </body>
 </html>
