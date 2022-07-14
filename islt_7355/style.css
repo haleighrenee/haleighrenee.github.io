@@ -113,15 +113,24 @@ body {
   .header {
     background-color:#f3f7f4;
   }
+  /* footer background image here */
   .footer {
     background-color: #f3f7f4;
-    background-image: url(footerimage.jpg);
+    background-image: url(footerimage.jpg)!important;
     background-size: cover;
     text-align: center;
 
     
   }
-  
+  /* transformation of icons but it looks terrible so I need to continue figuring out how to adjust it?*/
+  .pic {
+    -webkit-transition : width 0.3s linear 0s;
+    transition: width 0.3s linear 0s; z-index:10; 
+  }
+  .pic:hover {
+    width:50px;
+  }
+
   .sidebar2 {
     background-color: #f3f7f4;
     color: #233B3D;
