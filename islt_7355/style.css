@@ -1,3 +1,13 @@
+@font-face {
+  font-family: josefinSlab; 
+  src: url(JosefinSlab-VariableFont_wght.ttf);
+
+}
+blockquote {font-family: josefinSlab, serif;
+  font-size: 150%;
+  color: #4e7e6d
+}
+
 body {background-color: #f3f7f4;}
 
 h1 {color: #4e7e6d}
@@ -5,7 +15,7 @@ h1 {color: #4e7e6d;}
 h2 {color: #76867f;}
 h3 {color: #76867f;}
 p {font-family: Georgia, 'Times New Roman', Times, serif; 
-font-size: 9vw;
+font-size: 100%;
 margin: 10px;
 padding-left: 10px;
 width: 1000px;
@@ -62,6 +72,11 @@ body {
        "sidebar2"
        "footer"
     }
+    ul {
+      list-style-type: none;
+      width: 100%;
+      background: #f3f7f4;
+    }
   
     @media only screen and (min-width: 500px)  {
     .wrapper {
@@ -106,10 +121,41 @@ body {
     background-color: #f3f7f4;
     color: #233B3D;
   }
-  @media (min-width: 600px ) { 
+  .responsive {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    
+  }
+  @media screen and (max-width: 600px ) { 
     p{ 
-      font-size: 1.5rem;
+      font-size: 100%;
       line-height: 1.5;
     }
 
   }
+@media screen and (min-width: 600px) {
+  p {
+    font-size: 100%;
+    line-height: 1.5;
+  }
+}
+/* Print stylesheet */
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    margin: 1em 1em 1em 1em !important; 
+  }
+  .hamnav,
+  .nav,
+  .sidebar,
+  .sidebar2, { 
+    display: none;
+  }
+p, ul, ol {
+  font-size: 11pt;
+}
+}
