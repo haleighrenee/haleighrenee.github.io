@@ -25,13 +25,23 @@ color: #233B3D;}
 div { background-color: #f3f7f4;}
 main {
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 60px 3fr 2fr 2fr 60px;
     grid-gap: 10px;
-    height: 900px;
+    height: 400px;
 
 }
 
+.wrapper {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-areas:
+   "header"
+   "sidebar"
+   "content"
+   "sidebar2"
+   "footer"
+}
 body {
     margin: 40px;
   }
@@ -46,6 +56,7 @@ body {
   
     .content {
       grid-area: content;
+      align-content: center
     }
   
     .header {
@@ -61,17 +72,8 @@ body {
       background-color: #f3f7f4;
       color: #233B3D;
     }
-  
-    .wrapper {
-      display: grid;
-      grid-gap: 1em;
-      grid-template-areas:
-       "header"
-       "sidebar"
-       "content"
-       "sidebar2"
-       "footer"
-    }
+
+
     ul {
       list-style-type: none;
       width: 100%;
@@ -81,7 +83,7 @@ body {
     @media only screen and (min-width: 500px)  {
     .wrapper {
   
-      grid-template-columns: 20% auto;
+      grid-template-columns: auto;
       grid-template-areas:
       "header   header"
       "sidebar  content"
@@ -179,7 +181,7 @@ body {
   .hamnav,
   .nav,
   .sidebar,
-  .sidebar2, { 
+  .sidebar2 { 
     display: none;
   }
 p, ul, ol {
