@@ -80,7 +80,7 @@ body {
       background: #f3f7f4;
     }
   
-    @media only screen and (min-width: 500px)  {
+    @media screen and (max-width: 500px)  {
     .wrapper {
   
       grid-template-columns: auto;
@@ -92,7 +92,7 @@ body {
     }
     }
   
-    @media only screen and (min-width: 600px)   {
+    @media  screen and (min-width: 600px)   {
       .wrapper {
         grid-gap: 20px;
         grid-template-columns: 120px auto 120px;
@@ -102,8 +102,7 @@ body {
         "footer  footer  footer";
         max-width: 600px;
       }
-    }
-  
+    }  
   .box {
     background-color: #f3f7f4;
     color: #233B3D;
@@ -133,14 +132,15 @@ body {
     width:50px;
   }
 
+
   .sidebar2 {
     background-color: #f3f7f4;
     color: #233B3D;
   }
-  .responsive {
+  .headshot {
     width: 100%;
     height: auto;
-    max-width: 200px;
+    max-width: 350px;
     
   }
   .iframe-container {
@@ -164,7 +164,7 @@ body {
 
   }
 @media screen and (min-width: 600px) {
-  p {
+  p{
     font-size: 100%;
     line-height: 1.5;
   }

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+               <meta charset="utf-8">
+               <meta name="viewport" content="width=device-width, initial-scale=1">
+               <title>Contact</title>
+               <link rel="shortcut icon" type= "image/png" href="favicon.png">
+               <link rel="stylesheet" href="style.css">
+               <link rel="stylesheet" href="nav.css">
+
+
+</head>
+<body>
+    <nav id="hamnav">
+        <!-- (B) THE HAMBURGER -->
+        <label for="hamburger">&#9776;</label>
+        <input type="checkbox" id="hamburger"/>
+  
+        <!-- (C) MENU ITEMS -->
+        <div class="dropdown" id="hamitems">
+          <ul>
+              <li> <a href="index.html"> Home </a></li>
+              <li> <a href="about.html"> About </a> </li>
+              <li> <a href="project.html">Projects</a>
+              <ul>
+                  <li> <a href="#Project1"> Project 1 </a> </li>
+                  <li> <a href="#Project2"> Project 2</a> </li>
+                  <li> <a href="#Project3"> Project 3</a>  </li>
+              </ul>
+              <li> <a href="reflection.html">Philosophy</a></li>
+              <li> <a href="contact.html"> Contact </a></li>
+      
+          </ul>
+      </div>
+      </nav>
+      <div class="wrapper">
+          <div class="box header"> <h1>Contact Me:</h1></div>
+          <div class="box sidebar"> </div>
+          <div class="box sidebar2"></div>
+          <div class="box content"></div>
+          <div class="content">
+<!--this page is for contact form-->
+<form action="mailto:hrmg24@umsystem.edu?Subject=Portfolio%20Website%20Contact" method="post" enctype="text/plain">
+   <div>
+       <label for="firstname"> First Name: </label>
+       <input type="text" id="firstname" placeholder="First Name" required>
+   </div> 
+   <div>
+       <label for="lastname">Last Name: </label>
+       <input type="text" id="lastname" placeholder="Last Name" required>
+   </div>
+   <div> 
+       <label for="email"> Email Address:  </label>
+       <input type="email" name="email" id="email" placeholder="Email Address" required> <br>
+   </div>
+   <div>
+       Message: <br>
+       <textarea name="Message" rows="6" cols="20"></textarea> 
+   </div>
+   <div class="controls"> 
+    <button type="reset"> Reset </button>   
+    <button type="submit"> Send </button> </div>
+
+</form>
+
+          </div> </div>
+    
+          <div class="box footer"> <footer>Haleigh Thompson &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            <img class ="pic" src="phone.jpg" alt="phone"> 816-000-000  &nbsp; &nbsp; 
+            <img class="pic" src="email.jpg" alt="email"> hrmg24@umsystem.edu 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;© 2022</footer></div>
+</body>
+</html>
