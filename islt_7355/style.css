@@ -188,3 +188,28 @@ p, ul, ol {
   font-size: 11pt;
 }
 }
+
+table {
+  border-collapse: collapse;
+}
+table th {
+  text-align: left;
+  background-color: #233B3D;
+  color: #f3f7f4;
+  padding: 4px 25px 4px 8px;
+
+}
+table td {
+  border: solid #233B3D;
+  padding: 4px 8px;
+}
+table tr:nth-child(odd) td {
+  background-color: #76867f;
+}
+
+@media screen and (max-width: 480px) {
+  .table {
+      overflow-x: auto;
+      width: 320px;
+  }
+}
